@@ -42,3 +42,7 @@ html, body {
 	text-align: center;
 	font-size:  7em;
 }
+
+.logo {
+	max-height: 7em;
+}
