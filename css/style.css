@@ -46,3 +46,78 @@ html, body {
 .logo {
 	max-height: 7em;
 }
+
+.sidenav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 15%;
+	background-color: black;
+	color: white;
+	z-index: 10;
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+}
+
+
+.sidenav-list {
+	list-style-type: none;
+	padding-left: 1em;
+	padding-top: 0px;
+}
+
+.sidenav-list-item {
+	font-size: 22px;
+}
+
+.sidenav-close-btn {
+	background-color: inherit;
+    border-radius: 1em;
+    border: 2px SOLID;
+    font-size: 1.5em;
+    vertical-align: middle;
+    margin-top: .5em;
+    margin-right: .5em;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bold;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.sidenav-header .row {
+	text-align: end;
+}
+
+
+.slide-in {
+    animation: slide-in 0.5s forwards;
+    -webkit-animation: slide-in 0.5s forwards;
+}
+
+.slide-out {
+    animation: slide-out 0.5s forwards;
+    -webkit-animation: slide-out 0.5s forwards;
+}
+    
+@keyframes slide-in {
+    100% { transform: translateX(0%); }
+}
+
+@-webkit-keyframes slide-in {
+    100% { -webkit-transform: translateX(0%); }
+}
+    
+@keyframes slide-out {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
+}
+
+@-webkit-keyframes slide-out {
+    0% { -webkit-transform: translateX(0%); }
+    100% { -webkit-transform: translateX(-100%); }
+}
+
+
+
